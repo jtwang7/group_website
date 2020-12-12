@@ -1,0 +1,102 @@
+@import '~antd/dist/antd.css';
+
+.pgOnePlaceholder {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #cccccc;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 400px;
+    height: 700px;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.texts {
+    color: white;
+    font-size: medium;
+    font-family: 'Microsoft YaHei' 'Times New Roman';
+}
+
+.title {
+    color: white !important;
+    font-weight: bolder !important;
+    font-family: 'KaiTi_GB2312' 'Times New Roman' !important;
+}
+
+.paragraph {
+    width: 100%;
+}
+
+/* 进场动画 */
+.hidden {
+    visibility: hidden;
+}
+
+.item_row {
+    animation: leftToRight 1000ms both ease-out;
+}
+
+.item_delay_row {
+    animation: leftToRight 1000ms ease-out 100ms both;
+}
+
+.item_column {
+    animation: topToBottom 1500ms both ease-out;
+}
+
+@keyframes leftToRight {
+    0%{
+        opacity: 0;
+        transform:translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes topToBottom {
+    0%{
+        opacity: 0;
+        transform:translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0);
+    }
+}
+
+/* 退场动画 */
+.remove_item {
+    animation-name: remove;
+    animation-fill-mode: both;
+    animation-duration: 150ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes remove {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(200%);
+    }
+}
+
+/* 
+注意translate()的位置是相对于非动画的目标位置，
+即当动画出场后，下一次动画入场仍是相对于目标初始位置，
+而非动画退场后的位置 
+*/

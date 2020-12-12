@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menuContainer {
+    position: fixed;
+    top:0;
+    z-index: 0;
+}
+
+.dropDownMenu {
+    position: relative;
+    z-index: 10;
+    width: 100vw;
+    height: 400px;
+    background-color: white;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+/* animation */
+.menuEnter {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.menuEnterActive {
+    opacity: 0.8;
+    transform: translateY(0);
+    transition: all 200ms ease-out;
+}
+.menuEnterDone {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+.menuExit {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+.menuExitActive {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 200ms ease-out;
+}
+.menuExitDone {
+    opacity: 0;
+    transform: translateY(-100%);
+}

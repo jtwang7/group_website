@@ -1,0 +1,25 @@
+@import '~antd/dist/antd.css';
+
+.leftPlaceHolder {
+    width: 30vw;
+    height: 100%;
+}
+
+.rightPlaceHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 300px;
+    width: 70vw;
+    height: 100%;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw;
+    height: 400px;
+    position: fixed;
+    z-index: 999;
+}

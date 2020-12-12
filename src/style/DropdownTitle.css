@@ -1,0 +1,48 @@
+.subEnter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+.subEnterActive {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 300ms ease-out;
+}
+.subEnterDone {
+    opacity: 1;
+    transform: translateX(0);
+}
+.subExit {
+    opacity: 1;
+    transform: translateX(0);
+}
+.subExitActive {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 300ms ease-in;
+}
+.subExitDone {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 0;
+}
+
+.fontStyle {
+    color: rgb(243, 136, 86);
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial,'Times New Roman','Microsoft YaHei',SimHei;
+    display: none;
+    /* opacity: 0;
+    transform: translateX(100vw); */
+}

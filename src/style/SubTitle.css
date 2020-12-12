@@ -1,0 +1,17 @@
+.subTitleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.textFont {
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    font-family: Arial,'Times New Roman','Microsoft YaHei',SimHei;
+}
